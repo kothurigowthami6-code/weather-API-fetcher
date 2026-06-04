@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weather App</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Fetcher</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="card">
+    <div class="card">
 
-    <div class="search">
-        <input type="text" id="city" placeholder="Enter city name">
-        <button onclick="getWeather()">Search</button>
-    </div>
+        <h1 class="app-title">Weather API Fetcher</h1>
 
-    <div class="weather">
+        <div class="search">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
 
-        <img id="icon" src="" alt="Weather Icon">
+        <div class="weather">
 
-        <h1 id="temp">--°C</h1>
+            <img id="icon" src="" alt="Weather Icon">
 
-        <h2 id="cityName">City</h2>
+            <h1 id="temp">--°C</h1>
 
-        <p id="date"></p>
+            <h2 id="cityName">City</h2>
 
-        <p id="time"></p>
+            <p id="date"></p>
 
-        <div class="details">
-            <p id="humidity">💧 Humidity: --%</p>
-            <p id="wind">🌬 Wind: -- km/h</p>
+            <p id="time"></p>
+
+            <div class="details">
+                <p id="humidity">💧 Humidity: --%</p>
+                <p id="wind">🌬 Wind: -- km/h</p>
+            </div>
+
         </div>
 
     </div>
 
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
